@@ -8,7 +8,11 @@ const AlertList = () => {
     useEffect(() => {
         const fetchAlerts = async () => {
             try {
+<<<<<<< HEAD
                 const response = await axios.get("http://localhost:5001/alerts");
+=======
+                const response = await axios.get("https://xbox-alert.onrender.com/alerts");
+>>>>>>> 6232376 (commited)
                 setAlerts(response.data.alerts);
             } catch (error) {
                 console.error("Error fetching alerts:", error);

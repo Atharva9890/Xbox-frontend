@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .notification-container {
     background: rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -7,10 +8,57 @@
     width: 300px;
     margin: auto;
     margin-top: 50px;
+=======
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, #001a00, #003300, #000000);
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/0/04/Xbox_logo_%282019%29.svg') no-repeat center;
+    background-size: 40%;
+    opacity: 0.05;
+    z-index: 0;
+}
+
+/* Ensure the form stays above the background */
+.notification-container {
+    position: relative;
+    z-index: 1;
+}
+
+.notification-container {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+    text-align: center;
+    width: 350px;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.notification-container:hover {
+    transform: scale(1.05);
+>>>>>>> 6232376 (commited)
 }
 
 h2 {
     color: #00ff00;
+<<<<<<< HEAD
     margin-bottom: 15px;
 }
 
@@ -28,23 +76,92 @@ input {
 button {
     padding: 10px 20px;
     font-size: 1rem;
+=======
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+label {
+    display: block;
+    color: white;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #00ff00;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #00ff88;
+    box-shadow: 0 0 10px #00ff88;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+>>>>>>> 6232376 (commited)
     background: #00ff00;
     border: none;
     color: black;
     font-weight: bold;
+<<<<<<< HEAD
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
     width: 100%;
+=======
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+    width: 100%;
+    margin-top: 10px;
+>>>>>>> 6232376 (commited)
 }
 
 button:hover {
     background: #008000;
+<<<<<<< HEAD
     box-shadow: 0 0 20px rgba(0, 255, 0, 1);
+=======
+    box-shadow: 0 0 25px rgba(0, 255, 0, 1);
+    transform: scale(1.05);
+>>>>>>> 6232376 (commited)
 }
 
 p {
     color: white;
     margin-top: 10px;
+<<<<<<< HEAD
+=======
+    font-size: 1rem;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+>>>>>>> 6232376 (commited)
 }
