@@ -1,0 +1,30 @@
+.alert-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #00ff00;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #00ff00;
+}
+
+li:last-child {
+    border-bottom: none;
+}
