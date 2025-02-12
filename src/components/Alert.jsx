@@ -8,11 +8,7 @@ const AlertList = () => {
     useEffect(() => {
         const fetchAlerts = async () => {
             try {
-<<<<<<< HEAD
-                const response = await axios.get("http://localhost:5001/alerts");
-=======
                 const response = await axios.get("https://xbox-alert.onrender.com/alerts");
->>>>>>> 6232376 (commited)
                 setAlerts(response.data.alerts);
             } catch (error) {
                 console.error("Error fetching alerts:", error);
@@ -33,7 +29,7 @@ const AlertList = () => {
                 <ul>
                     {alerts.map((alert, index) => (
                         <li key={index}>
-                            <strong>{alert.roommate}</strong> saw <strong>{alert.friendPlaying}</strong> playing Xbox at {new Date(alert.timestamp).toLocaleTimeString()}
+                            <strong>{alert.roommate}</strong> saw <strong>{alert.friendPlaying}</strong> playing Xbox at {new Date(alert.timestamp).toLocaleTimeString('en-US', { timeZone: 'America/Los_Angeles' })}
                         </li>
                     ))}
                 </ul>
